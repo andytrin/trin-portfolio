@@ -1,3 +1,5 @@
+import { ExternalLink, MapPin, Briefcase } from "lucide-react";
+
 export default function Home() {
   return (
     <main className="min-h-screen">
@@ -11,7 +13,7 @@ export default function Home() {
           Trin
         </span>
         <a
-          href="https://www.linkedin.com/in/your-profile"
+          href="https://www.linkedin.com/in/andytrinugraha"
           target="_blank"
           rel="noopener noreferrer"
           className="text-xs tracking-widest uppercase text-stone-500 hover:text-stone-300 transition-colors duration-200"
@@ -39,15 +41,17 @@ export default function Home() {
         </p>
         <div className="mt-12 flex gap-6 items-center">
           <a
-            href="https://www.linkedin.com/in/your-profile"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border border-stone-700 text-stone-300 text-xs tracking-widest uppercase px-8 py-3 hover:bg-stone-900 hover:border-stone-500 transition-all duration-300"
+          href="https://www.linkedin.com/in/andytrinugraha"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="border border-stone-700 text-stone-300 text-xs tracking-widest uppercase px-8 py-3 hover:bg-stone-900 hover:border-stone-500 transition-all duration-300 flex items-center gap-2"
           >
-            LinkedIn Profile
+          <span>LinkedIn Profile</span>
+          <ExternalLink size={12} />
           </a>
-          <span className="text-stone-700 text-xs tracking-wider">
-            Based in Bali, Indonesia
+          <span className="text-stone-700 text-xs tracking-wider flex items-center gap-1">
+          <MapPin size={11} />
+          Bali, Indonesia
           </span>
         </div>
       </section>
