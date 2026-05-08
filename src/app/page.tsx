@@ -1,88 +1,177 @@
 export default function Home() {
   return (
-    <main className="min-h-screen px-6 py-20 max-w-3xl mx-auto">
+    <main className="min-h-screen">
+
+      {/* Navigation */}
+      <nav className="fixed top-0 left-0 right-0 z-10 px-8 py-5 flex justify-between items-center border-b border-stone-900 bg-[#0a0a0a]/90 backdrop-blur-sm">
+        <span
+          style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+          className="text-lg font-light tracking-widest text-stone-300"
+        >
+          Trin
+        </span>
+        <a
+          href="https://www.linkedin.com/in/your-profile"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-xs tracking-widest uppercase text-stone-500 hover:text-stone-300 transition-colors duration-200"
+        >
+          LinkedIn
+        </a>
+      </nav>
 
       {/* Hero */}
-      <section className="mb-24">
-        <p className="text-sm tracking-widest uppercase text-stone-400 mb-6">
-          HR Business Partner
+      <section className="pt-40 pb-32 px-8 max-w-4xl mx-auto">
+        <p className="text-xs tracking-widest uppercase text-stone-500 mb-8">
+          HR Business Partner · Southeast Asia
         </p>
-        <h1 className="text-5xl font-light leading-tight text-stone-100 mb-6">
-          Trin
+        <h1
+          style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+          className="text-7xl font-light leading-none text-stone-100 mb-8"
+        >
+          Andy Rachman
+          <br />
+          <span className="italic text-stone-400">Trinugraha</span>
         </h1>
-        <p className="text-lg text-stone-400 max-w-xl leading-relaxed">
-          People operations, culture, and organizational development across
-          regional markets in Southeast Asia.
+        <p className="text-base text-stone-400 max-w-lg leading-relaxed">
+          People operations, organizational development, and HR strategy
+          across regional markets in Southeast Asia.
         </p>
-        <div className="mt-10">
+        <div className="mt-12 flex gap-6 items-center">
           <a
             href="https://www.linkedin.com/in/your-profile"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block border border-stone-600 text-stone-300 text-sm tracking-wider px-6 py-3 hover:bg-stone-800 transition-colors duration-200"
+            className="border border-stone-700 text-stone-300 text-xs tracking-widest uppercase px-8 py-3 hover:bg-stone-900 hover:border-stone-500 transition-all duration-300"
           >
-            View LinkedIn Profile
+            LinkedIn Profile
           </a>
+          <span className="text-stone-700 text-xs tracking-wider">
+            Based in Bali, Indonesia
+          </span>
         </div>
       </section>
 
-      {/* About */}
-      <section className="mb-24">
-        <h2 className="text-xs tracking-widest uppercase text-stone-500 mb-6">
-          About
-        </h2>
-        <p className="text-stone-300 leading-relaxed">
-          Based in Bali, Indonesia. Currently serving as HR Business Partner
-          with a focus on Sales, CRM, and multi-site operations across
-          Indonesia, Singapore, Malaysia, and the Philippines.
-        </p>
-        <p className="text-stone-300 leading-relaxed mt-4">
-          My work sits at the intersection of people strategy, operational
-          structure, and organizational growth — with a particular focus on
-          building HR infrastructure during active company expansion phases.
-        </p>
-      </section>
+      {/* Divider */}
+      <div className="px-8 max-w-4xl mx-auto">
+        <div className="border-t border-stone-800" />
+      </div>
 
-      {/* Experience */}
-      <section className="mb-24">
-        <h2 className="text-xs tracking-widest uppercase text-stone-500 mb-6">
-          Experience
-        </h2>
-        <div className="space-y-8">
+      {/* About */}
+      <section className="py-24 px-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <p className="text-stone-200 font-medium">HR Business Partner</p>
-            <p className="text-stone-500 text-sm mt-1">
-              Wine Adore Group · 2023 – Present
+            <p className="text-xs tracking-widest uppercase text-stone-600">
+              About
             </p>
-            <p className="text-stone-400 text-sm mt-2 leading-relaxed">
-              Multi-site HR operations across Indonesia, Singapore, Malaysia,
-              and the Philippines. Focus on Sales Division, CRM team
-              structure, onboarding systems, and regional expansion support.
+          </div>
+          <div className="md:col-span-2 space-y-4">
+            <p className="text-stone-300 leading-relaxed">
+              Currently serving as HR Business Partner at Wine Adore Group,
+              a Singapore-headquartered wine import and distribution company
+              with operations across Indonesia, Singapore, Malaysia, and the
+              Philippines.
+            </p>
+            <p className="text-stone-400 leading-relaxed">
+              My work focuses on building HR infrastructure and people
+              systems during active organizational growth — spanning
+              recruitment, onboarding design, performance management,
+              culture development, and multi-site HR operations.
             </p>
           </div>
         </div>
       </section>
 
+      {/* Divider */}
+      <div className="px-8 max-w-4xl mx-auto">
+        <div className="border-t border-stone-800" />
+      </div>
+
+      {/* Experience */}
+      <section className="py-24 px-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div>
+            <p className="text-xs tracking-widest uppercase text-stone-600">
+              Experience
+            </p>
+          </div>
+          <div className="md:col-span-2 space-y-12">
+
+            <div className="border-l border-stone-800 pl-6">
+              <p
+                style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+                className="text-xl font-light text-stone-100"
+              >
+                HR Business Partner
+              </p>
+              <p className="text-xs tracking-wider text-stone-500 mt-1">
+                Wine Adore Group · 2023 – Present
+              </p>
+              <p className="text-sm text-stone-400 mt-3 leading-relaxed">
+                Multi-site HR operations across Indonesia, Singapore,
+                Malaysia, and the Philippines. Supporting Sales, Tech, and
+                Business Support divisions with a primary focus on CRM team
+                structure, regional onboarding design, and organizational
+                development initiatives.
+              </p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {["Recruitment", "OD", "L&D", "HRIS", "Multi-site Ops"].map(
+                  (tag) => (
+                    <span
+                      key={tag}
+                      className="text-xs text-stone-500 border border-stone-800 px-3 py-1"
+                    >
+                      {tag}
+                    </span>
+                  )
+                )}
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <div className="px-8 max-w-4xl mx-auto">
+        <div className="border-t border-stone-800" />
+      </div>
+
       {/* Contact */}
-      <section className="mb-12">
-        <h2 className="text-xs tracking-widest uppercase text-stone-500 mb-6">
-          Connect
-        </h2>
-        <a
-          href="https://www.linkedin.com/in/your-profile"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-stone-300 underline underline-offset-4 hover:text-stone-100 transition-colors duration-200"
-        >
-          LinkedIn
-        </a>
+      <section className="py-24 px-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div>
+            <p className="text-xs tracking-widest uppercase text-stone-600">
+              Connect
+            </p>
+          </div>
+          <div className="md:col-span-2">
+            <p className="text-stone-400 mb-8 leading-relaxed">
+              Open to strategic HR conversations, regional collaboration,
+              and professional networking.
+            </p>
+            <a
+              href="https://www.linkedin.com/in/your-profile"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-stone-300 text-sm underline underline-offset-4 decoration-stone-700 hover:text-stone-100 hover:decoration-stone-400 transition-all duration-200"
+            >
+              linkedin.com/in/your-profile
+            </a>
+          </div>
+        </div>
       </section>
 
       {/* Footer */}
-      <footer className="pt-12 border-t border-stone-800">
-        <p className="text-stone-600 text-xs tracking-wide">
-          © 2026 Andy Rachman Trinugraha
-        </p>
+      <footer className="border-t border-stone-900 px-8 py-8 max-w-4xl mx-auto">
+        <div className="flex justify-between items-center">
+          <p className="text-stone-700 text-xs tracking-wide">
+            © 2026 Andy Rachman Trinugraha
+          </p>
+          <p className="text-stone-700 text-xs tracking-wide">
+            Bali, Indonesia
+          </p>
+        </div>
       </footer>
 
     </main>
