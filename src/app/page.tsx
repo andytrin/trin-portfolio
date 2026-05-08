@@ -109,7 +109,7 @@ export default function Home() {
                 HR Business Partner
               </p>
               <p className="text-xs tracking-wider text-stone-500 mt-1">
-                Wine Adore Group · 2023 – Present
+                Wine Adore Group · 2025 – Present
               </p>
               <p className="text-sm text-stone-400 mt-3 leading-relaxed">
                 Multi-site HR operations across Indonesia, Singapore,
@@ -155,12 +155,12 @@ export default function Home() {
               and professional networking.
             </p>
             <a
-              href="https://www.linkedin.com/in/your-profile"
+              href="https://www.linkedin.com/in/andytrinugraha"
               target="_blank"
               rel="noopener noreferrer"
               className="text-stone-300 text-sm underline underline-offset-4 decoration-stone-700 hover:text-stone-100 hover:decoration-stone-400 transition-all duration-200"
             >
-              linkedin.com/in/your-profile
+              linkedin.com/in/andytrinugraha
             </a>
           </div>
         </div>
